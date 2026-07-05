@@ -5,14 +5,6 @@ import os
 import math
 import requests
 
-# ---------------- CONFIG ----------------
-API_URL = "https://serverless.roboflow.com"
-API_KEY_RF = "tVEUHfHYIYYbM9tc8ZNd"   # Roboflow API key
-OCR_API_KEY = "K89310060288957"        # OCR.Space API key
-GEMINI_API_KEY = "AIzaSyC3w1snSmdeaWeYibnUa6Lduh2x3qBd6T4"  # Gemini API key
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
-imagepath = "images/sample10.jpg"       # Input image path
-
 # ---------------- INIT ROBFLOW ----------------
 client = InferenceHTTPClient(
     api_url=API_URL,
