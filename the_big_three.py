@@ -19,13 +19,6 @@ import requests
 import re
 import io
 
-# ---------------- CONFIG ----------------
-# Replace these with your real keys (or read from env vars)
-API_URL = "https://serverless.roboflow.com"   # or your Roboflow endpoint
-API_KEY_RF = "tVEUHfHYIYYbM9tc8ZNd"           # Roboflow API key
-OCR_API_KEY = "K89310060288957"               # OCR.Space API key
-GEMINI_API_KEY = "AIzaSyC3w1snSmdeaWeYibnUa6Lduh2x3qBd6T4"  # Gemini API key
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
 # Roboflow workflow settings (you already used this)
 ROBofLOW_WORKSPACE = "billing-board-detection"
