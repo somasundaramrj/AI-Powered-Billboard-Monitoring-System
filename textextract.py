@@ -9,16 +9,6 @@ import easyocr
 import json
 
 # ---- CONFIG ----
-API_URL = "https://serverless.roboflow.com"
-API_KEY = "tVEUHfHYIYYbM9tc8ZNd"
-WORKSPACE = "billing-board-detection"
-WORKFLOW_ID = "detect-count-and-visualize"
-INPUT_IMAGE = "images/billi2.jpg"
-OUTPUT_DIR = "output_crops"
-OCR_ENGINE = "tesseract"  # or "easyocr"
-CONFIDENCE_THRESH = 0.5
-TARGET_CLASS = "billboard"  # Focus extraction only on this class
-
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Set Tesseract OCR executable path if needed
