@@ -1,50 +1,69 @@
-AI-Powered Billboard Monitoring System
-Overview
+GestureBridge – AI-Powered Sign Language Communication Platform
 
-The AI-Powered Billboard Monitoring System is an automated solution designed to detect and verify unauthorized billboards in urban and semi-urban environments. By integrating computer vision, OCR, and cloud technologies, the system significantly improves monitoring efficiency and compliance enforcement.
+GestureBridge is an AI-powered web application developed to improve communication between sign language users and people who communicate using spoken or written language. The platform combines artificial intelligence, computer vision, and modern web technologies to provide an accessible, real-time communication experience while also supporting sign language learning.
 
-Problem Statement
+The system uses a webcam to capture live video and processes each frame using MediaPipe and OpenCV to extract hand and body landmarks. These landmarks are converted into numerical data and passed to a trained deep learning model that recognizes sign language gestures. The predicted sign is then converted into readable text, allowing users who do not understand sign language to follow the conversation in real time.
 
-Monitoring unauthorized billboards manually is time-consuming, error-prone, and inefficient, especially in large cities. Traditional methods require field inspections, which are labor-intensive and slow, leading to delays in identifying violations. Municipal authorities and regulatory agencies need a scalable, accurate, and automated solution to monitor billboard compliance in real time.
+In addition to gesture recognition, GestureBridge provides a collaborative learning platform where users can upload, browse, and practice sign language videos. Videos are organized by category and difficulty level, making it easier for learners to discover and practice new signs. The platform also includes search and filtering capabilities to improve accessibility and navigation.
 
-Objectives
+The application follows a client-server architecture with a React.js frontend and a Flask backend. REST APIs enable seamless communication between the user interface, machine learning models, and the MongoDB database. Secure user authentication allows users to register, log in, and manage their profiles while maintaining data integrity.
 
-Automate detection of unauthorized billboards using computer vision techniques.
+The project has been designed with scalability and accessibility as primary goals. Its modular architecture makes it easy to integrate additional sign languages, improve recognition accuracy with new AI models, and expand the platform with features such as real-time video communication, speech-to-sign translation, multilingual support, and mobile applications.
 
-Extract and verify billboard content to ensure adherence to regulatory guidelines.
+Features
+Real-time sign language recognition using artificial intelligence
+Live gesture detection through webcam
+Hand and body landmark extraction using MediaPipe
+Deep learning–based gesture classification
+Gesture-to-text translation
+Secure user registration and authentication
+Sign language learning portal
+Video upload and management
+Search, filtering, and categorization of learning videos
+Responsive and accessible user interface
+RESTful API architecture
+MongoDB database integration
+Technology Stack
 
-Reduce reporting latency and improve operational efficiency.
+Frontend
 
-Provide real-time dashboards for authorities to monitor and act on violations.
+React.js
+HTML5
+CSS3
+JavaScript
 
-Enable scalable deployment across multiple regions using cloud and container technologies.
+Backend
 
-Solution
+Python
+Flask
 
-The system integrates multiple technologies to deliver an end-to-end automated pipeline:
+Artificial Intelligence
 
-Billboard Detection: Uses YOLO-v8 to identify billboard structures in images or video streams.
+TensorFlow / Keras
+OpenCV
+MediaPipe
 
-Content Verification: Applies Tesseract OCR to extract textual information and cross-check with authorized records.
+Database
 
-Backend Processing: A Flask API handles image submission, inference, and report generation.
+MongoDB
 
-Data Storage: Results and metadata are stored in MongoDB for historical tracking and analysis.
+Tools
 
-Frontend Dashboard: React.js dashboard displays real-time detection results, previews, and compliance reports.
+Git
+GitHub
+Visual Studio Code
+Project Objectives
+Improve communication accessibility for sign language users.
+Enable real-time sign language recognition using AI.
+Provide an interactive platform for learning sign language.
+Build a scalable and modular architecture for future enhancements.
+Promote inclusive communication through modern technology.
+Future Enhancements
+Support for multiple sign languages.
+Speech-to-sign and text-to-sign translation.
+Real-time video calling with live sign language recognition.
+Mobile application for Android and iOS.
+Personalized learning recommendations.
+Improved AI models for higher recognition accuracy.
 
-Deployment & Scalability: Uses Docker for containerization and AWS cloud services for hosting and processing. Gemini API automates reporting and notifications.
-
-Outcomes
-
-Achieved 95% detection accuracy for unauthorized billboards.
-
-Reduced report processing latency by 45%, enabling faster compliance actions.
-
-Enabled real-time monitoring, improving regulatory enforcement and operational efficiency.
-
-Provided a scalable and robust system deployable across multiple urban regions.
-
-Tech Stack
-
-React.js | Bootstrap | Axios | Flask | YOLO-v8 | OpenCV | Tesseract OCR | PyTorch | MongoDB | Docker | AWS | Gemini API
+This project demonstrates the practical application of artificial intelligence, computer vision, and full-stack web development to create an inclusive communication platform that supports accessibility, learning, and real-time interaction for sign language users.
