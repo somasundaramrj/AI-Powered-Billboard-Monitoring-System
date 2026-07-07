@@ -46,8 +46,8 @@ The proposed system automatically performs the following tasks:
 
 ### Backend
 
-* Flask
-* Flask-CORS
+* Express js
+* node js
 
 ### Artificial Intelligence
 
